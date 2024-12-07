@@ -1,0 +1,116 @@
+/* Resetear márgenes y padding para asegurar consistencia en todos los navegadores */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Configuración de la fuente y el contenedor principal */
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+ background-color: #333;
+ color: white;
+ padding: 10px 20px;
+ text-align: center;
+}
+
+nav a {
+ color: white;
+ margin-right: 20px;
+ text-decoration: none;
+}
+
+/* Sección principal */
+main {
+ padding: 20px;
+}
+
+/* Sección de los filtros */
+#filtros form {
+ margin-bottom: 20px;
+}
+
+/* Estilo para el catálogo de juegos */
+#catalogo .juegos {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+#catalogo .juego {
+ width: 200px;
+ margin: 10px;
+ background-color: white;
+ padding: 10px;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ text-align: center;
+}
+
+#catalogo img {
+ width: 100%;
+ height: auto;
+}
+
+/* Footer */
+footer {
+ text-align: center;
+ padding: 10px;
+ background-color: #333;
+ color: white;
+ position: fixed;
+ width: 100%;
+ bottom: 0;
+}
+
+/* Estilo para los iconos de jugadores */
+.fas.fa-user, .fas.fa-users {
+ font-size: 24px;
+ color: #333;
+ margin-right: 5px;
+}
+
+/* Responsividad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+ header {
+     padding: 10px 5px;
+ }
+ 
+ /* Hacer el catálogo más compacto en pantallas pequeñas */
+ #catalogo .juegos {
+     justify-content: center;
+ }
+
+ #catalogo .juego {
+     width: 150px; /* Ajustar el tamaño de los juegos */
+     margin: 15px;
+ }
+
+ /* Estilos adicionales para los filtros */
+ #filtros form {
+     display: block;
+     width: 100%;
+ }
+
+ #filtros select, #filtros button {
+     width: 100%;
+     margin: 5px 0;
+ }
+}
+
+/* Responsividad para pantallas de escritorio muy grandes */
+@media screen and (min-width: 1200px) {
+ #catalogo .juegos {
+     justify-content: space-between;
+ }
+
+ #catalogo .juego {
+     width: 250px; /* Ajustar el tamaño de los juegos */
+ }
+}

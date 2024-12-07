@@ -1,0 +1,2 @@
+# CatalogoXGamers
+Catalogo de juegos
